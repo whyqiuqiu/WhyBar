@@ -1,0 +1,76 @@
+/*!
+ * Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2022 Fonticons, Inc.
+ */
+
+.fa,
+.fas,
+.far,
+.fal,
+.fab {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* 用户图标 */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* 锁图标 */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* 返回箭头图标 */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* 微信图标 */
+.fa-weixin:before {
+  content: "\f1d7";
+}
+
+/* QQ图标 */
+.fa-qq:before {
+  content: "\f1d6";
+}
+
+/* 微博图标 */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+.fa,
+.fas {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+}
+
+.fab {
+  font-family: 'Font Awesome 6 Brands';
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url("../../../static/fontawesome/fa-solid-900.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: 'Font Awesome 6 Brands';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../../../static/fontawesome/fa-brands-400.woff2") format("woff2");
+} 

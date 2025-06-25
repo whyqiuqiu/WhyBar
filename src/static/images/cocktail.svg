@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>鸡尾酒</title>
+    <g id="鸡尾酒" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M90,24 L30,24 C28.34,24 27,25.34 27,27 C27,27.79 27.32,28.52 27.84,29.06 L57,60 L57,96 L45,96 C43.34,96 42,97.34 42,99 C42,100.66 43.34,102 45,102 L75,102 C76.66,102 78,100.66 78,99 C78,97.34 76.66,96 75,96 L63,96 L63,60 L92.16,29.06 C92.68,28.52 93,27.79 93,27 C93,25.34 91.66,24 90,24 Z M83.13,33 L36.87,33 L45.87,42 L74.13,42 L83.13,33 Z" id="形状" fill="#8e44ad" fill-rule="nonzero"></path>
+        <circle id="椭圆形" fill="#8e44ad" cx="60" cy="60" r="54" opacity="0.1"></circle>
+    </g>
+</svg> 

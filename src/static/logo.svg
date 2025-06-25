@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="100" cy="100" r="95" fill="#8e44ad" stroke="#732d91" stroke-width="3"/>
+  
+  <!-- 鸡尾酒杯身 -->
+  <polygon points="70,80 130,80 120,160 80,160" fill="#fff" stroke="#333" stroke-width="2"/>
+  
+  <!-- 鸡尾酒液体 -->
+  <polygon points="72,82 128,82 118,140 82,140" fill="#e74c3c"/>
+  
+  <!-- 液体渐变效果 -->
+  <polygon points="72,82 128,82 118,110 82,110" fill="#f39c12"/>
+  
+  <!-- 杯底 -->
+  <ellipse cx="100" cy="160" rx="20" ry="4" fill="#333"/>
+  
+  <!-- 杯茎 -->
+  <rect x="98" y="160" width="4" height="20" fill="#333"/>
+  
+  <!-- 杯底座 -->
+  <ellipse cx="100" cy="180" rx="25" ry="6" fill="#333"/>
+  
+  <!-- 装饰橄榄/樱桃 -->
+  <circle cx="90" cy="90" r="4" fill="#27ae60"/>
+  <circle cx="110" cy="100" r="3" fill="#e74c3c"/>
+  
+  <!-- 装饰吸管 -->
+  <rect x="115" y="70" width="2" height="30" fill="#f1c40f" transform="rotate(15 116 85)"/>
+  
+  <!-- 气泡效果 -->
+  <circle cx="95" cy="120" r="2" fill="#fff" opacity="0.7"/>
+  <circle cx="105" cy="130" r="1.5" fill="#fff" opacity="0.7"/>
+  <circle cx="85" cy="115" r="1" fill="#fff" opacity="0.7"/>
+  
+  <!-- 项目名称 -->
+  <text x="100" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fff">鸡尾酒点单</text>
+</svg>

@@ -1,0 +1,128 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/forgot-password/forgot-password",
+			"style": {
+				"navigationBarTitleText": "忘记密码",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/cocktail-detail/cocktail-detail",
+			"style": {
+				"navigationBarTitleText": "鸡尾酒详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/order-confirm/order-confirm",
+			"style": {
+				"navigationBarTitleText": "确认订单",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/address-list/address-list",
+			"style": {
+				"navigationBarTitleText": "收货地址",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/address-edit/address-edit",
+			"style": {
+				"navigationBarTitleText": "编辑地址",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/order-detail/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/order-list/order-list",
+			"style": {
+				"navigationBarTitleText": "我的订单",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/settings/settings",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"navigationStyle": "default"
+			}
+		},
+		{
+			"path": "pages/profile-edit/profile-edit",
+			"style": {
+				"navigationBarTitleText": "编辑资料",
+				"navigationStyle": "default"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "鸡尾酒点单",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#8e44ad",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "static/tabbar/home.svg",
+				"selectedIconPath": "static/tabbar/home-active.svg"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的",
+				"iconPath": "static/tabbar/user.svg",
+				"selectedIconPath": "static/tabbar/user-active.svg"
+			}
+		]
+	}
+}
