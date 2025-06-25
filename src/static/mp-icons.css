@@ -1,0 +1,216 @@
+/* 微信小程序图标样式 */
+.mp-icon {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* 用户图标 */
+.mp-icon-user::before {
+  content: "👤";
+}
+
+/* 搜索图标 */
+.mp-icon-search::before {
+  content: "🔍";
+}
+
+/* 购物车图标 */
+.mp-icon-cart::before {
+  content: "🛒";
+}
+
+/* 加号图标 */
+.mp-icon-plus::before {
+  content: "+";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* 减号图标 */
+.mp-icon-minus::before {
+  content: "-";
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* 删除图标 */
+.mp-icon-delete::before {
+  content: "🗑️";
+}
+
+/* 编辑图标 */
+.mp-icon-edit::before {
+  content: "✏️";
+}
+
+/* 设置图标 */
+.mp-icon-settings::before {
+  content: "⚙️";
+}
+
+/* 箭头图标 */
+.mp-icon-arrow-left::before {
+  content: "←";
+  font-size: 1.2em;
+}
+
+.mp-icon-arrow-right::before {
+  content: "→";
+  font-size: 1.2em;
+}
+
+/* 星星图标 */
+.mp-icon-star::before {
+  content: "⭐";
+}
+
+/* 心形图标 */
+.mp-icon-heart::before {
+  content: "❤️";
+}
+
+/* 位置图标 */
+.mp-icon-location::before {
+  content: "📍";
+}
+
+/* 电话图标 */
+.mp-icon-phone::before {
+  content: "📞";
+}
+
+/* 相机图标 */
+.mp-icon-camera::before {
+  content: "📷";
+}
+
+/* 锁图标 */
+.mp-icon-lock::before {
+  content: "🔒";
+}
+
+/* 眼睛图标 */
+.mp-icon-eye::before {
+  content: "👁️";
+}
+
+.mp-icon-eye-slash::before {
+  content: "🙈";
+}
+
+/* 消息图标 */
+.mp-icon-message::before {
+  content: "💬";
+}
+
+/* 检查标记 */
+.mp-icon-check::before {
+  content: "✓";
+  font-weight: bold;
+  color: #52c41a;
+}
+
+/* 关闭图标 */
+.mp-icon-close::before {
+  content: "✕";
+  font-weight: bold;
+}
+
+/* 信息图标 */
+.mp-icon-info::before {
+  content: "ℹ️";
+}
+
+/* 警告图标 */
+.mp-icon-warning::before {
+  content: "⚠️";
+}
+
+/* 钟表图标 */
+.mp-icon-clock::before {
+  content: "🕒";
+}
+
+/* 卡车图标 */
+.mp-icon-truck::before {
+  content: "🚚";
+}
+
+/* 盾牌图标 */
+.mp-icon-shield::before {
+  content: "🛡️";
+}
+
+/* 同步图标 */
+.mp-icon-sync::before {
+  content: "🔄";
+}
+
+/* 扫帚图标 */
+.mp-icon-clean::before {
+  content: "🧹";
+}
+
+/* 铃铛图标 */
+.mp-icon-bell::before {
+  content: "🔔";
+}
+
+/* 音响图标 */
+.mp-icon-speaker::before {
+  content: "📢";
+}
+
+/* 耳机图标 */
+.mp-icon-headset::before {
+  content: "🎧";
+}
+
+/* 文件图标 */
+.mp-icon-file::before {
+  content: "📄";
+}
+
+/* 钥匙图标 */
+.mp-icon-key::before {
+  content: "🔑";
+}
+
+/* 手机图标 */
+.mp-icon-mobile::before {
+  content: "📱";
+}
+
+/* 收件箱图标 */
+.mp-icon-inbox::before {
+  content: "📥";
+}
+
+/* 支付图标 */
+.mp-icon-credit-card::before {
+  content: "💳";
+}
+
+/* 性别图标 */
+.mp-icon-mars::before {
+  content: "♂";
+  color: #1890ff;
+}
+
+.mp-icon-venus::before {
+  content: "♀";
+  color: #eb2f96;
+}
+
+.mp-icon-user-secret::before {
+  content: "🤐";
+}
+
+/* 右箭头 */
+.mp-icon-chevron-right::before {
+  content: "〉";
+  color: #999;
+} 

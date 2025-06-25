@@ -113,15 +113,11 @@
 		"list": [
 			{
 				"pagePath": "pages/home/home",
-				"text": "首页",
-				"iconPath": "static/tabbar/home.svg",
-				"selectedIconPath": "static/tabbar/home-active.svg"
+				"text": "🏠 首页"
 			},
 			{
-				"pagePath": "pages/profile/profile",
-				"text": "我的",
-				"iconPath": "static/tabbar/user.svg",
-				"selectedIconPath": "static/tabbar/user-active.svg"
+				"pagePath": "pages/profile/profile", 
+				"text": "👤 我的"
 			}
 		]
 	}

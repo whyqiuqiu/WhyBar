@@ -5,7 +5,7 @@
       <view class="header-content">
         <text class="title">ORDER</text>
         <view class="search-box">
-          <view class="fa fa-search"></view>
+          <view class="mp-icon mp-icon-search"></view>
           <input type="text" placeholder="搜索鸡尾酒" class="search-input" v-model="searchKeyword" @confirm="searchCocktails" />
         </view>
       </view>
@@ -59,7 +59,7 @@
             <view class="cocktail-bottom">
               <text class="cocktail-price">¥{{ item.price }}</text>
               <view class="add-btn" @tap.stop="addToCart(item)">
-                <view class="fa fa-plus">+</view>
+                <text class="mp-icon mp-icon-plus"></text>
               </view>
             </view>
           </view>
@@ -80,7 +80,7 @@
     <!-- 购物车浮动按钮 -->
     <view class="cart-btn" @tap="viewCart" v-if="cartCount > 0">
       <view class="cart-icon">
-        <view class="fa fa-shopping-cart"></view>
+        <view class="mp-icon mp-icon-cart"></view>
         <view class="cart-badge" v-if="cartCount > 0">{{ cartCount }}</view>
       </view>
       <view class="cart-price" v-if="cartTotal > 0">¥{{ cartTotal }}</view>
@@ -361,51 +361,57 @@ onLoad(() => {
 </script>
 
 <style>
+/* 移除了错误的import，样式现在全局导入 */
+
+/* 容器样式 */
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f8f9fa;
 }
 
 /* 头部样式 */
 .header {
   background: linear-gradient(135deg, #9b59b6, #8e44ad);
-  padding: 40rpx 30rpx 30rpx;
+  padding: 80rpx 30rpx 40rpx;
   color: #fff;
-  position: relative;
 }
-.uni-input-placeholder{
-  color: #fefe;
-}
+
 .header-content {
-  padding-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-  font-size: 36rpx;
+  font-size: 48rpx;
   font-weight: 600;
-  margin-bottom: 20rpx;
-  display: block;
+  margin-bottom: 30rpx;
+  letter-spacing: 4rpx;
 }
 
 .search-box {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  max-width: 600rpx;
+  height: 80rpx;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 40rpx;
-  padding: 12rpx 24rpx;
+  display: flex;
+  align-items: center;
+  padding: 0 30rpx;
+  backdrop-filter: blur(10rpx);
 }
 
-.search-box .fa {
-  color: #fff;
-  font-size: 28rpx;
-  margin-right: 10rpx;
+.search-box .mp-icon {
+  color: rgba(255, 255, 255, 0.8);
+  margin-right: 20rpx;
+  font-size: 32rpx;
 }
 
 .search-input {
   flex: 1;
-  height: 60rpx;
+  height: 100%;
   color: #fff;
   font-size: 28rpx;
 }
@@ -543,8 +549,9 @@ onLoad(() => {
   box-shadow: 0 4rpx 8rpx rgba(142, 68, 173, 0.3);
 }
 
-.add-btn .fa {
+.add-btn .mp-icon {
   font-size: 24rpx;
+  color: #fff;
 }
 
 /* 加载更多 */
@@ -566,8 +573,8 @@ onLoad(() => {
 /* 购物车浮动按钮 */
 .cart-btn {
   position: fixed;
-  bottom: 3.5625rem;
-  left: 0.5625rem;
+  bottom: 140rpx;
+  left: 30rpx;
   background: linear-gradient(135deg, #9b59b6, #8e44ad);
   border-radius: 40rpx;
   height: 90rpx;
@@ -583,7 +590,7 @@ onLoad(() => {
   margin-right: 16rpx;
 }
 
-.cart-icon .fa {
+.cart-icon .mp-icon {
   color: #fff;
   font-size: 40rpx;
 }

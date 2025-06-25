@@ -16,6 +16,177 @@ export default {
     
     // 初始化用户状态
     this.initUserState();
+    
+    // 初始化 API 配置
+    this.initApiConfig();
+  },
+  
+  // 初始化 API 配置
+  initApiConfig() {
+    // 设置 API 基础方法
+    this.globalData.api = {
+      // 认证相关
+      auth: {
+        login: async (username, password, remember = false) => {
+          return await this.globalData.request({
+            url: '/auth/login',
+            method: 'POST',
+            data: { username, password, remember }
+          });
+        },
+        register: async (userData) => {
+          return await this.globalData.request({
+            url: '/auth/register',
+            method: 'POST',
+            data: userData
+          });
+        },
+        logout: async () => {
+          return await this.globalData.request({
+            url: '/auth/logout',
+            method: 'POST'
+          });
+        }
+      },
+      
+      // 鸡尾酒相关
+      cocktails: {
+        getList: async (params = {}) => {
+          return await this.globalData.request({
+            url: '/cocktails',
+            method: 'GET',
+            data: params
+          });
+        },
+        getDetail: async (id) => {
+          return await this.globalData.request({
+            url: `/cocktails/${id}`,
+            method: 'GET'
+          });
+        },
+        getCategories: async () => {
+          return await this.globalData.request({
+            url: '/cocktails/categories',
+            method: 'GET'
+          });
+        },
+        getRecommended: async (limit = 4) => {
+          return await this.globalData.request({
+            url: `/cocktails/recommended?limit=${limit}`,
+            method: 'GET'
+          });
+        }
+      },
+      
+      // 购物车相关
+      cart: {
+        getList: async () => {
+          return await this.globalData.request({
+            url: '/cart',
+            method: 'GET'
+          });
+        },
+        add: async (cocktailId, quantity = 1) => {
+          return await this.globalData.request({
+            url: '/cart',
+            method: 'POST',
+            data: { cocktail_id: cocktailId, quantity }
+          });
+        },
+        update: async (itemId, quantity) => {
+          return await this.globalData.request({
+            url: `/cart/${itemId}`,
+            method: 'PUT',
+            data: { quantity }
+          });
+        },
+        remove: async (itemId) => {
+          return await this.globalData.request({
+            url: `/cart/${itemId}`,
+            method: 'DELETE'
+          });
+        }
+      },
+      
+      // 用户相关
+      user: {
+        getInfo: async () => {
+          return await this.globalData.request({
+            url: '/user/info',
+            method: 'GET'
+          });
+        },
+        updateInfo: async (userData) => {
+          return await this.globalData.request({
+            url: '/user/info',
+            method: 'PUT',
+            data: userData
+          });
+        },
+        getAddresses: async () => {
+          return await this.globalData.request({
+            url: '/user/addresses',
+            method: 'GET'
+          });
+        },
+        addAddress: async (addressData) => {
+          return await this.globalData.request({
+            url: '/user/addresses',
+            method: 'POST',
+            data: addressData
+          });
+        },
+        updateAddress: async (addressId, addressData) => {
+          return await this.globalData.request({
+            url: `/user/addresses/${addressId}`,
+            method: 'PUT',
+            data: addressData
+          });
+        },
+        deleteAddress: async (addressId) => {
+          return await this.globalData.request({
+            url: `/user/addresses/${addressId}`,
+            method: 'DELETE'
+          });
+        }
+      },
+      
+      // 订单相关
+      order: {
+        create: async (orderData) => {
+          return await this.globalData.request({
+            url: '/orders',
+            method: 'POST',
+            data: orderData
+          });
+        },
+        getList: async (params = {}) => {
+          return await this.globalData.request({
+            url: '/orders',
+            method: 'GET',
+            data: params
+          });
+        },
+        getDetail: async (orderId) => {
+          return await this.globalData.request({
+            url: `/orders/${orderId}`,
+            method: 'GET'
+          });
+        },
+        cancel: async (orderId) => {
+          return await this.globalData.request({
+            url: `/orders/${orderId}/cancel`,
+            method: 'POST'
+          });
+        },
+        confirm: async (orderId) => {
+          return await this.globalData.request({
+            url: `/orders/${orderId}/confirm`,
+            method: 'POST'
+          });
+        }
+      }
+    };
   },
   
   // 初始化用户状态
@@ -536,9 +707,7 @@ export default {
 </script>
 
 <style>
-/* 引入图标字体 */
-@import url('./static/iconfont.css');
-@import url('./static/fontawesome/all.css');
+@import url("./static/mp-icons.css");
 
 /* 全局样式 */
 page {
